@@ -2,6 +2,7 @@
   --logo-size: 8.9rem;
   --nav-button-margin: 0.8rem;
   --nav-padding: 2.4rem 2.4rem;
+  --nav-container-max-width: 100%;
 }
 
 header {
@@ -30,6 +31,7 @@ nav .nav-right {
 @media screen and (min-width: 600px) {
   :root {
     --nav-padding: 2.4rem 3.2rem;
+    /* --nav-container-max-width: calc(100% - 6.4rem); */
   }
 }
 
@@ -45,7 +47,7 @@ nav .nav-right {
     --logo-size: 14.8rem;
     --nav-button-margin: 2.4rem;
     --nav-padding: 2.4rem 4.8rem; 
-    --nav-container-max-width:     83.3333%;
+    --nav-container-max-width: 83.3333%;
 
   }
 }

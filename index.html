@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Netflix</title>
-    <link rel="stylesheet" href="/styles/fonts.css" />
-    <link rel="stylesheet" href="/styles/base.css" />
-    <link rel="stylesheet" href="/styles/variables.css" />
-    <link rel="stylesheet" href="/styles/components.css" />
-    <link rel="stylesheet" href="/styles/nav.css" />
-    <link rel="stylesheet" href="/styles/hero.css" />
-
+    <link rel="stylesheet" href="/styles/fonts.css"/>
+    <link rel="stylesheet" href="/styles/base.css"/>
+    <link rel="stylesheet" href="/styles/variables.css"/>
+    <link rel="stylesheet" href="/styles/components.css"/>
+    <link rel="stylesheet" href="/styles/nav.css"/>
+    <link rel="stylesheet" href="/styles/hero.css"/>
 
   </head>
   <body>
@@ -32,16 +31,50 @@
           </g>
         </svg>
         <div class="nav-right">
-            <div class="dropdown">
-              <!-- <select name="language" id="language">
+          <div class="dropdown">
+            <!-- <select name="language" id="language">
                 <option selected value="English">English</option>
                 <option value="tamil">தமிழ்</option>
               </select>
               <div class="dropdown_arrow"></div> -->
-            </div>
-            <button class="button">Sign In</button>
           </div>
+          <button class="button">Sign In</button>
+        </div>
       </nav>
     </header>
+    <main>
+      <section class="hero-wrapper">
+        <div class="hero-container">
+          <div>
+            <img src="/bg.jpg" alt="background"/>
+            <div class="bg-overlay"></div>
+          </div>
+          <div class="hero-title">
+            <h1>
+              Enjoy big movies, hit series and more from ₹ 149.
+            </h1>
+            <h3>Join today. Cancel anytime.</h3>
+          </div>
+          <div class="hero-form">
+            <h3>
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </h3>
+            <div class="hero-form-input">
+              <input
+                type="email"
+                autocomplete="true"
+                name="email"
+                id="email"
+                class="hero-input"
+                placeholder="Email address"
+/>
+              <button class="button button-hero">Get Started</button>
+            </div>
+          </div>
+          <div class="hero-divider"></div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
