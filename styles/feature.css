@@ -75,14 +75,20 @@
   text-align: left;
 }
 
-.details details > summary::marker {
-  content: ""
+.details details p {
+  margin-top: 1rem;
+  font-size: 1.8rem;
 }
 
-.details details::after {
+.details details > summary::marker {
+  content: ""
+
+}
+
+.details details > summary::after {
   content: "+";
   position: absolute;
-  top: 50%;
+  top: 3.4rem;
   right: 2.4rem;
   transform: translateY(-50%);
   font-size: 3.2rem;

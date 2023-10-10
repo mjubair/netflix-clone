@@ -8,6 +8,7 @@ footer .feature {
     text-align: left;
     justify-content: start;
     align-items: start;
+    flex-direction: column;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -21,9 +22,15 @@ footer .footer-list div {
     width: 100%;
 }
 
+footer .footer-list ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 footer .footer-list li {
     width: calc(100% + 0.75rem);
     font-size: 1.4rem;
     color: rgba(255, 255, 255, 0.7);
     margin-top: 1.6rem;
+    flex-basis: calc(25% - 1.2rem);
 }
