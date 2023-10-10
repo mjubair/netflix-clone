@@ -7,14 +7,18 @@
 }
 
 .tv {
-  position: relative;
+  
+}
+
+.feature {
+  padding: var(--feature-padding);
   max-width: var(--feature-max-width);
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding: var(--feature-padding)
 }
 
 .feature h2 {
@@ -55,6 +59,34 @@
   transform: translate(-50%, -50%);
   z-index: -1;
   overflow: hidden;
+}
+
+.details {
+  margin-top: 2.4rem;
+  width: 100%;
+}
+
+.details details {
+  padding: 2.4rem;
+  background-color: rgb(45, 45, 45);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  position: relative;
+  text-align: left;
+}
+
+.details details > summary::marker {
+  content: ""
+}
+
+.details details::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 2.4rem;
+  transform: translateY(-50%);
+  font-size: 3.2rem;
+  font-weight: 100;
 }
 
 @media screen and (min-width: 600px) {

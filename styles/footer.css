@@ -1,0 +1,29 @@
+footer .feature p {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1.2rem;
+}
+
+footer .feature {
+    text-align: left;
+    justify-content: start;
+    align-items: start;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+footer .footer-list{
+    display: flex;
+    width: 100%;
+}
+
+footer .footer-list div {
+    width: 100%;
+}
+
+footer .footer-list li {
+    width: calc(100% + 0.75rem);
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 1.6rem;
+}
