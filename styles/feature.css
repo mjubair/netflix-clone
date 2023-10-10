@@ -73,6 +73,7 @@
   font-size: 1.8rem;
   position: relative;
   text-align: left;
+  cursor: pointer;
 }
 
 .details details p {
