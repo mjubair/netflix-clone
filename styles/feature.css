@@ -1,0 +1,80 @@
+:root {
+    --feature-padding: 5.6rem 0;
+    --feature-title-font: 3.2rem;
+    --feature-subtitle-font: 1.8rem;
+    --feature-margin: 0 2.4rem;
+    --feature-max-width: calc(100% - 4.8rem);
+}
+
+.tv {
+  position: relative;
+  max-width: var(--feature-max-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: var(--feature-padding)
+}
+
+.feature h2 {
+  font-size: var(--feature-title-font);
+  font-weight: 700;
+}
+
+.feature p {
+  font-size: var(--feature-subtitle-font);
+  margin-top: 1.6rem;
+}
+
+.feature {
+    text-align: center;
+  margin: var(--feature-margin);
+}
+
+.video {
+    position: relative;
+}
+
+.video img {
+  width: 100%;
+}
+
+.video video {
+  display: inline-block;
+}
+
+.video .player {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 600px) {
+  :root {
+    --feature-title-font:4.8rem;
+    --feature-subtitle-font: 2.4rem;
+    --feature-padding: 7.2rem 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  :root {
+    --feature-margin: 0 3.4rem;
+  }
+  .feature {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  
+}

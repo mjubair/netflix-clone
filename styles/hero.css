@@ -1,20 +1,26 @@
 :root {
   --hero-title-font-size: 3.2rem;
-  --hero-title-font-weight: 500;
+  --hero-title-font-weight: 700;
   --hero-subtitle-font-size: 1.8rem;
   --hero-form-title-font-size: 1.8rem;
   --hero-margin: 12rem 2.4rem 3.2rem 2.4rem;
   --form-padding: 0 2.4rem;
 }
 
+main {
+    transform: translateY(-8rem);
+}
+
+header {
+    position: relative;
+    z-index: 1;
+}
+
 .hero-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
+    position: relative;
   min-height: 4.8rem;
   width: 100%;
-  z-index: -1;
-
+    overflow: hidden;
 }
 
 .hero-wrapper img,
@@ -22,15 +28,14 @@
   position: absolute;
   left: 0;
   top: 0;
-
+  width: 100%;
+  height: 100%;
   z-index: -1;
 }
 
 .hero-wrapper img {
   object-fit: cover;
-  width: 100%;
-  height: 100%;
-  /* transform: scale(1.25) translateY(-10%); */
+  transform: scale(1.25) translateY(-10%);
 }
 
 .hero-container {
@@ -41,21 +46,21 @@
     padding: var(--hero-margin);
     margin: auto;
     width: 100%;
+    height: 100%;
     max-width: var(--nav-container-max-width);
 
 }
 
-
 .bg-overlay {
   width: 100%;
   height: 100%;
+  background: rgba(0, 0, 0, 0.4);
   background-image: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.8) 0,
     rgba(0, 0, 0, 0) 60%,
     rgba(0, 0, 0, 0.8) 100%
   );
-  background: rgba(0, 0, 0, 0.4);
 }
 
 .hero-title {
@@ -122,9 +127,6 @@
 .hero-divider {
   width: 100%;
   height: 0.8rem;
-  position: absolute;
-  left: 0;
-  bottom: -0.8rem;
   background-color: rgb(35, 35, 35);
 }
 
@@ -139,7 +141,7 @@
 
 @media screen and (min-width: 600px) {
     :root {
-        --hero-margin: 19.85rem 3.2rem 7.65rem 3.2rem;
+        --hero-margin: 17.8rem 3.2rem 9rem 3.2rem;
         --form-padding: 0 3.2rem;
     }
 
@@ -153,7 +155,7 @@
   
   @media screen and (min-width: 960px) {
     :root {
-        --hero-margin: 28rem 3.2rem 15.55rem 3.2rem;
+        --hero-margin: 28rem 3.2rem 18.6rem 3.2rem;
         --hero-title-font-size: 4.8rem;
         --hero-subtitle-font-size: 2.4rem;
         --hero-form-title-font-size: 2rem;
@@ -164,3 +166,4 @@
   @media screen and (min-width: 1280px) {
     :root {
     }
+}

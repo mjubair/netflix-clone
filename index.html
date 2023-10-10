@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/styles/components.css"/>
     <link rel="stylesheet" href="/styles/nav.css"/>
     <link rel="stylesheet" href="/styles/hero.css"/>
+    <link rel="stylesheet" href="/styles/feature.css"/>
 
   </head>
   <body>
@@ -43,25 +44,28 @@
       </nav>
     </header>
     <main>
-      <section class="hero-wrapper">
-        <div class="hero-container">
-          <div>
-            <img src="/bg.jpg" alt="background"/>
-            <div class="bg-overlay"></div>
-          </div>
-          <div class="hero-title">
-            <h1>
+      <section >
+        <div class="hero-wrapper">
+          <div class="hero-container">
+            <div class="bg-container">
+              <div>
+                <img src="/bg.jpg" alt="background"/>
+                <div class="bg-overlay"></div>
+              </div>
+            </div>
+            <div class="hero-title">
+              <h1>
               Enjoy big movies, hit series and more from ₹ 149.
             </h1>
-            <h3>Join today. Cancel anytime.</h3>
-          </div>
-          <div class="hero-form">
-            <h3>
+              <h3>Join today. Cancel anytime.</h3>
+            </div>
+            <div class="hero-form">
+              <h3>
               Ready to watch? Enter your email to create or restart your
               membership.
             </h3>
-            <div class="hero-form-input">
-              <input
+              <div class="hero-form-input">
+                <input
                 type="email"
                 autocomplete="true"
                 name="email"
@@ -69,12 +73,30 @@
                 class="hero-input"
                 placeholder="Email address"
 />
-              <button class="button button-hero">Get Started</button>
+                <button class="button button-hero">Get Started</button>
+              </div>
             </div>
           </div>
           <div class="hero-divider"></div>
         </div>
       </section>
+      <section>
+        <div class="feature tv">
+          <div class="feature-text">
+            <h2>Enjoy on your TV</h2>
+            <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+          </div>
+          <div class="video">
+            <img src="/tv.png" alt="">
+            <div class="player">
+              <video src="/video.m4v" autoplay loop muted playsinline></video>
+            </div>
+          </div>
+        </div>
+        <div class="hero-divider"></div>
+
+      </section>
+
     </main>
   </body>
 </html>
