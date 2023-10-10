@@ -33,7 +33,6 @@
 
 .feature {
     text-align: center;
-  margin: var(--feature-margin);
 }
 
 .video {
@@ -121,8 +120,15 @@
 }
 
 @media screen and (min-width: 1280px) {
+
+ 
+}
+
+@media screen and (min-width: 1920px) {
+  :root {
+    --feature-max-width: calc( 66.66666666666666% - 9.6rem );;
+  }
   .feature.faq {
-    max-width: calc( 83.33333333333334% - 9.6rem );
     margin: auto;
   }
 
